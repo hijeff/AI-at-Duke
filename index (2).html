@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My AI Platform</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Add Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Sidebar Toggle Button (visible in both open and closed states) -->
+  <button class="sidebar-toggle" onclick="toggleSidebar()">≡</button>
+
+  <!-- Dark Mode Toggle Switch -->
+  <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle" onclick="toggleTheme()">
+      <span class="slider"></span>
+      <span id="toggle-icon" class="icon">🌙</span>
+    </label>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <nav>
+      <a href="#chat-section">Home</a>
+      <a href="#resources">AI Resources</a>
+      <div class="sub-link">
+        <a href="#learn-with-ai">Learn with AI</a>
+        <a href="#teach-with-ai">Teach with AI</a>
+        <a href="#research-with-ai">Research with AI</a>
+        <a href="#innovate-with-ai">Innovate with AI</a>
+      </div>
+      <a href="#pillars">Pillars of AI</a>
+      <div class="sub-link">
+        <a href="#trustworthy-ai">Trustworthy AI</a>
+        <a href="#advancing-scientific-discovery">Advancing Scientific Discovery</a>
+        <a href="#sustainable-ai-infrastructure">Sustainable AI Infrastructure</a>
+        <a href="#life-with-ai">Life with AI</a>
+      </div>
+      <a href="#prompt-responsibly">AI Events</a>
+      <a href="#duke-ai-committee">Duke AI Committee</a>
+      <a href="#prompt-responsibly">Prompt Responsibly</a>
+    </nav>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content" id="content">
+    <header class="header">
+      <h1>AI at Duke</h1>
+      <p>Prompt Responsibly.</p>
+    </header>
+
+    <!-- Chat Section -->
+    <section id="chat-section" class="chat-section">
+      <div class="chat-box" id="chat-box"></div>
+      <div class="input-section">
+        <input type="text" id="user-input" placeholder="Type your message here...">
+        <button id="send-button">Send</button>
+      </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+      <h2>What would you like to do?</h2>
+      <div class="resource-sections">
+        <div class="resource" id="learn-with-ai">
+          <h3>Learn with AI</h3>
+          <p>Discover tools and courses that can help you integrate AI into your learning journey.</p>
+        </div>
+        <div class="resource" id="teach-with-ai">
+          <h3>Teach with AI</h3>
+          <p>Access resources for educators to bring AI into the classroom.</p>
+        </div>
+        <div class="resource" id="research-with-ai">
+          <h3>Research with AI</h3>
+          <p>Explore AI-driven research opportunities and materials.</p>
+        </div>
+        <div class="resource" id="innovate-with-ai">
+          <h3>Innovate with AI</h3>
+          <p>Learn about tools and funding to push forward AI innovations.</p>
+        </div>
+      </div>
+    </section>
+
+  <!-- JavaScript for Sidebar Toggle and Theme Toggle -->
+  <script src="script.js"></script>
+</body>
+</html>
